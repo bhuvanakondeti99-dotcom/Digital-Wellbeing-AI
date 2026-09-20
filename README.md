@@ -1,11 +1,14 @@
 # Digital Wellbeing Risk Predictor
-![Digital Wellbeing Risk Predictor Dashboard](dashboard.png)
+<img width="1901" height="911" alt="dashboard" src="https://github.com/user-attachments/assets/3de05d58-54ae-4ff2-9991-cc9bc469e547" />
+
+
 
 An end-to-end Machine Learning web application that analyzes users' digital habits and predicts digital wellbeing risk using a Random Forest classification model.
 
 ## 🖥️ Application Preview
+<img width="1901" height="901" alt="dashboard png2" src="https://github.com/user-attachments/assets/9d7a691a-a932-470b-ae83-e24c63d39cf5" />
 
-![Digital Wellbeing Risk Predictor Dashboard](dashboard.png)
+
 
 ## 📌 Project Overview
 
