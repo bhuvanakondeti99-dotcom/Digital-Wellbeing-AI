@@ -1,4 +1,5 @@
 # Digital Wellbeing Risk Predictor
+![Digital Wellbeing Risk Predictor Dashboard](dashboard.png)
 
 An end-to-end Machine Learning web application that analyzes users' digital habits and predicts digital wellbeing risk using a Random Forest classification model.
 
