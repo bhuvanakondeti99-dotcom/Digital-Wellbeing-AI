@@ -2,6 +2,10 @@
 
 An end-to-end Machine Learning web application that analyzes users' digital habits and predicts digital wellbeing risk using a Random Forest classification model.
 
+## 🖥️ Application Preview
+
+![Digital Wellbeing Risk Predictor Dashboard](dashboard.png)
+
 ## 📌 Project Overview
 
 Excessive screen time, social media usage, frequent app checking, gaming, lack of sleep, and digital distractions can affect a person's daily routine.
