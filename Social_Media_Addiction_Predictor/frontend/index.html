@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Digital Wellbeing AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="brand">
+                <div class="brand-icon">✿</div>
+
+                <h1>Digital<br>Wellbeing AI</h1>
+
+                <p>Understand · Balance · Be Better</p>
+            </div>
+
+            <nav class="navigation">
+
+                <a href="#home" class="nav-item active">
+                    <span>⌂</span>
+                    <span>Home</span>
+                </a>
+
+                <a href="#prediction" class="nav-item">
+                    <span>✦</span>
+                    <span>Prediction</span>
+                </a>
+
+                <a href="#insightsSection" class="nav-item">
+                    <span>◫</span>
+                    <span>Insights</span>
+                </a>
+
+                <a href="#aboutAI" class="nav-item">
+                    <span>ⓘ</span>
+                    <span>About the AI</span>
+                </a>
+
+            </nav>
+
+            <div class="sidebar-quote">
+                <span>Better habits</span>
+                <span>Brighter you</span>
+                <small>♡</small>
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content" id="home">
+
+            <!-- TOP HEADER -->
+            <header class="top-header">
+
+                <div>
+                    <p class="welcome-small">YOUR DIGITAL WELLBEING</p>
+
+                    <h2>
+                        Hello! <span>👋</span>
+                    </h2>
+
+                    <p>
+                        Let's understand your digital habits better.
+                    </p>
+                </div>
+
+                <div class="header-message">
+                    <span>Small changes</span>
+                    <span>make a big difference ♡</span>
+                </div>
+
+            </header>
+
+
+            <!-- INPUT / PROFILE SECTION -->
+            <section class="dashboard-card profile-card" id="prediction">
+
+                <div class="section-heading">
+                    <div class="section-icon">♙</div>
+
+                    <div>
+                        <h3>Your Digital Profile</h3>
+                        <p>Enter your daily digital habits</p>
+                    </div>
+                </div>
+
+
+                <form id="predictionForm">
+
+                    <div class="input-group">
+                        <label for="age">Age</label>
+                        <input
+                            type="number"
+                            id="age"
+                            min="18"
+                            max="100"
+                            placeholder="e.g. 22"
+                            required>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="gender">Gender</label>
+
+                        <select id="gender" required>
+                            <option value="">Select</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="daily_screen_time_hours">
+                            Daily Screen Time
+                        </label>
+
+                        <div class="input-with-unit">
+                            <input
+                                type="number"
+                                id="daily_screen_time_hours"
+                                step="0.1"
+                                min="0"
+                                placeholder="e.g. 8"
+                                required>
+
+                            <span>hrs</span>
+                        </div>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="social_media_hours">
+                            Social Media
+                        </label>
+
+                        <div class="input-with-unit">
+                            <input
+                                type="number"
+                                id="social_media_hours"
+                                step="0.1"
+                                min="0"
+                                placeholder="e.g. 4"
+                                required>
+
+                            <span>hrs</span>
+                        </div>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="gaming_hours">
+                            Gaming
+                        </label>
+
+                        <div class="input-with-unit">
+                            <input
+                                type="number"
+                                id="gaming_hours"
+                                step="0.1"
+                                min="0"
+                                placeholder="e.g. 2"
+                                required>
+
+                            <span>hrs</span>
+                        </div>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="work_study_hours">
+                            Work / Study
+                        </label>
+
+                        <div class="input-with-unit">
+                            <input
+                                type="number"
+                                id="work_study_hours"
+                                step="0.1"
+                                min="0"
+                                placeholder="e.g. 4"
+                                required>
+
+                            <span>hrs</span>
+                        </div>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="sleep_hours">
+                            Sleep
+                        </label>
+
+                        <div class="input-with-unit">
+                            <input
+                                type="number"
+                                id="sleep_hours"
+                                step="0.1"
+                                min="0"
+                                placeholder="e.g. 7"
+                                required>
+
+                            <span>hrs</span>
+                        </div>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="notifications_per_day">
+                            Notifications
+                        </label>
+
+                        <input
+                            type="number"
+                            id="notifications_per_day"
+                            min="0"
+                            placeholder="e.g. 120"
+                            required>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="app_opens_per_day">
+                            App Opens
+                        </label>
+
+                        <input
+                            type="number"
+                            id="app_opens_per_day"
+                            min="0"
+                            placeholder="e.g. 100"
+                            required>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="weekend_screen_time">
+                            Weekend Screen Time
+                        </label>
+
+                        <div class="input-with-unit">
+                            <input
+                                type="number"
+                                id="weekend_screen_time"
+                                step="0.1"
+                                min="0"
+                                placeholder="e.g. 10"
+                                required>
+
+                            <span>hrs</span>
+                        </div>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="stress_level">
+                            Stress Level
+                        </label>
+
+                        <select id="stress_level" required>
+                            <option value="">Select</option>
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
+                        </select>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="academic_work_impact">
+                            Academic / Work Impact
+                        </label>
+
+                        <select id="academic_work_impact" required>
+                            <option value="">Select</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+
+
+                    <button type="submit" class="predict-button">
+                        <span>✦</span>
+                        Predict My Risk
+                        <span>→</span>
+                    </button>
+
+                </form>
+
+            </section>
+
+
+            <!-- RESULT DASHBOARD -->
+            <section id="resultDashboard" class="result-dashboard hidden">
+
+                <!-- DIGITAL PROFILE SUMMARY -->
+                <div class="dashboard-card summary-card">
+
+                    <div class="section-heading">
+                        <div class="section-icon">♙</div>
+
+                        <div>
+                            <h3>Your Digital Profile</h3>
+                            <p>Summary of the information you provided</p>
+                        </div>
+                    </div>
+
+
+                    <div class="profile-grid">
+
+                        <div class="profile-item">
+                            <span class="profile-label">Age</span>
+                            <strong id="summaryAge">--</strong>
+                        </div>
+
+                        <div class="profile-item">
+                            <span class="profile-label">Gender</span>
+                            <strong id="summaryGender">--</strong>
+                        </div>
+
+                        <div class="profile-item">
+                            <span class="profile-label">Screen Time</span>
+                            <strong id="summaryScreen">--</strong>
+                        </div>
+
+                        <div class="profile-item">
+                            <span class="profile-label">Social Media</span>
+                            <strong id="summarySocial">--</strong>
+                        </div>
+
+                        <div class="profile-item">
+                            <span class="profile-label">Gaming</span>
+                            <strong id="summaryGaming">--</strong>
+                        </div>
+
+                        <div class="profile-item">
+                            <span class="profile-label">Work / Study</span>
+                            <strong id="summaryWork">--</strong>
+                        </div>
+
+                        <div class="profile-item">
+                            <span class="profile-label">Sleep</span>
+                            <strong id="summarySleep">--</strong>
+                        </div>
+
+                        <div class="profile-item">
+                            <span class="profile-label">Stress</span>
+                            <strong id="summaryStress">--</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RESULT GRID -->
+                <div class="result-grid">
+
+
+                    <!-- RISK CARD -->
+                    <div class="dashboard-card risk-card">
+
+                        <div class="section-heading">
+                            <div class="section-icon">◔</div>
+
+                            <div>
+                                <h3>Digital Wellbeing Risk</h3>
+                                <p>Model prediction</p>
+                            </div>
+                        </div>
+
+
+                        <div class="risk-circle">
+
+                            <div class="risk-inner">
+
+                                <span id="probabilityText">
+                                    0%
+                                </span>
+
+                                <small id="riskText">
+                                    RESULT
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="risk-scale">
+
+                            <span>Lower</span>
+
+                            <div class="scale-line">
+                                <div id="riskDot"></div>
+                            </div>
+
+                            <span>Higher</span>
+
+                        </div>
+
+
+                        <div class="result-message">
+
+                            <span class="message-icon">✦</span>
+
+                            <p id="explanation">
+                                Your prediction will appear here.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- WHY PREDICTION -->
+                    <div
+                        class="dashboard-card insights-card"
+                        id="insightsSection">
+
+                        <div class="section-heading">
+
+                            <div class="section-icon">
+                                ⌕
+                            </div>
+
+                            <div>
+                                <h3>Why this prediction?</h3>
+
+                                <p>
+                                    Factors associated with the result
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div id="insightsList" class="insights-list">
+                        </div>
+
+                    </div>
+
+
+                    <!-- PERSONALIZED SUGGESTIONS -->
+                    <div class="dashboard-card suggestions-card">
+
+                        <div class="section-heading">
+
+                            <div class="section-icon">
+                                ♡
+                            </div>
+
+                            <div>
+                                <h3>Personalized Suggestions</h3>
+
+                                <p>
+                                    Small habits you can consider
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div id="suggestionsList" class="suggestions-list">
+                        </div>
+
+                    </div>
+
+
+                    <!-- MODEL INFORMATION -->
+                    <div
+                        class="dashboard-card model-card"
+                        id="aboutAI">
+
+                        <div class="section-heading">
+
+                            <div class="section-icon">
+                                ⚙
+                            </div>
+
+                            <div>
+                                <h3>Model Information</h3>
+
+                                <p>
+                                    Machine learning details
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="model-details">
+
+                            <div>
+                                <span>Model Used</span>
+                                <strong>Random Forest</strong>
+                            </div>
+
+                            <div>
+                                <span>Training Records</span>
+                                <strong>7,500</strong>
+                            </div>
+
+                            <div>
+                                <span>Features Used</span>
+                                <strong>12</strong>
+                            </div>
+
+                        </div>
+
+
+                        <h4>Performance · Test Set</h4>
+
+
+                        <div class="metrics-grid">
+
+                            <div class="metric">
+                                <span>Accuracy</span>
+                                <strong>93.87%</strong>
+                            </div>
+
+                            <div class="metric">
+                                <span>Precision</span>
+                                <strong>96.72%</strong>
+                            </div>
+
+                            <div class="metric">
+                                <span>Recall</span>
+                                <strong>94.54%</strong>
+                            </div>
+
+                            <div class="metric">
+                                <span>F1 Score</span>
+                                <strong>95.62%</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TRY AGAIN -->
+                <div class="try-again-wrapper">
+
+                    <button
+                        type="button"
+                        id="tryAgainButton"
+                        class="try-again">
+
+                        <span>↻</span>
+                        Try Again
+
+                    </button>
+
+                </div>
+
+
+                <p class="disclaimer">
+                    This tool provides a machine-learning-based digital
+                    wellbeing risk estimate. It is not a medical diagnosis.
+                </p>
+
+            </section>
+
+
+            <!-- FOOTER -->
+            <footer>
+
+                <span>♡</span>
+
+                A healthier relationship with technology
+                starts with small, mindful changes.
+
+                <span>♡</span>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
